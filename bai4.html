@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó-->
+<script>
+    function check() {
+        let numberA = Number(prompt(" enter the number a:"));
+        let numberB = Number(prompt(" enter the number b:"));
+        let numberC = Number(prompt(" enter the number c:"));
+        if (numberA > numberB){
+            if (numberA > numberC){
+                alert(" Number " + numberA + " max");
+            }
+        } else if (numberB > numberC){
+            alert("Number " + numberB + " max");
+        } else {
+            alert("Number " + numberC + " max ");
+        }
+    }
+    check();
+</script>
+
+
+</body>
+</html>

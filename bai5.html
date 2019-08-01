@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+    function rankStudent() {
+        let kiemTra = Number(prompt("nhap diem kiem tra: "));
+        let giuaKi = Number(prompt("nhap diem thi giua ki"));
+        let cuoiKi = Number(prompt("nhap diem thi cuoi ki"));
+        let avg = (kiemTra + giuaKi + cuoiKi) / 3;
+        if (avg >= 8.5){
+            alert("xep loai gioi");
+        } else if (avg >= 6.5){
+            alert("xep loai kha");
+        } else if ( avg >= 4.5){
+            alert("xep loai trung binh")
+        } else {
+            alert("xep loai yeu");
+        }
+    }
+    rankStudent();
+</script>
+
+
+</body>
+</html>
